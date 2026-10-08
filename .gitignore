@@ -38,3 +38,8 @@ npm-debug.log*
 *.pem
 .DS_Store
 Thumbs.db
+
+# Personal process notes (kept locally, not in the public repo)
+CHAT-LOG.md
+NOTES.md
+SETUP-STEPS.md
