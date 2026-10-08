@@ -1,53 +1,121 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="./assets/css/style.css">
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/images/favicon-32x32.png"
+		/>
+		<link rel="stylesheet" href="./assets/css/style.css" />
 
-  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+		<title>
+			Frontend Mentor | Newsletter sign-up form with success message
+		</title>
+	</head>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+	<body>
+		<main
+			class="h-screen w-full grid place-items-center bg-neutral-blue-700 p-6"
+		>
+			<div class="w-full max-w-226 bg-white rounded-[36px] px-8 py-6">
+				<div class="grid gap-16 grid-cols-2">
+					<div class="grid gap-8 text-neutral-blue-800">
+						<h1 class="text-[56px] font-bold leading-[100%]">Stay updated!</h1>
 
-  <!-- Sign-up form start -->
+						<p class="text-[16px] leading-[150%]">
+							Join 60,000+ product managers receiving monthly updates on:
+						</p>
 
-  Stay updated!
+						<ul class="grid gap-2">
+							<li
+								class="grid grid-cols-[auto_auto] justify-start gap-4 leading-[150%]"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="21"
+									height="21"
+									viewBox="0 0 21 21"
+									fill="none"
+								>
+									<circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+									<path
+										d="M6 11.3812L8.73464 14L15 8"
+										stroke="white"
+										stroke-width="2"
+									/>
+								</svg>
+								<span> Product discovery and building what matters </span>
+							</li>
+							<li
+								class="grid grid-cols-[auto_auto] justify-start gap-4 leading-[150%]"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="21"
+									height="21"
+									viewBox="0 0 21 21"
+									fill="none"
+								>
+									<circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+									<path
+										d="M6 11.3812L8.73464 14L15 8"
+										stroke="white"
+										stroke-width="2"
+									/>
+								</svg>
+								<span> Measuring to ensure updates are a success </span>
+							</li>
+							<li
+								class="grid grid-cols-[auto_auto] justify-start gap-4 leading-[150%]"
+							>
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="21"
+									height="21"
+									viewBox="0 0 21 21"
+									fill="none"
+								>
+									<circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+									<path
+										d="M6 11.3812L8.73464 14L15 8"
+										stroke="white"
+										stroke-width="2"
+									/>
+								</svg>
+								<span> And much more! </span>
+							</li>
+						</ul>
 
-  Join 60,000+ product managers receiving monthly updates on:
-
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
-
-  Email address
-  email@company.com
-
-  Subscribe to monthly newsletter
-
-  <!-- Sign-up form end -->
-
-  <!-- Success message start -->
-
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
-  <!-- Success message end -->
-  
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </footer>
-</body>
+						<form id="form">
+							<div>
+								<label for="email" class="text-[12px] font-bold leading-[150%]"
+									>Email address</label
+								>
+								<input
+									id="email"
+									name="email"
+									type="email"
+									placeholder="email@company.com"
+									class="py-4 px-6 rounded-lg border border-neutral-grey block w-full mt-2"
+								/>
+							</div>
+							<button
+								class="bg-neutral-blue-800 w-full text-white rounded-lg py-4 px-6 mt-6 font-bold cursor-pointer"
+							>
+								Subscribe to monthly newsletter
+							</button>
+						</form>
+					</div>
+					<div class="">
+            <img src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+          </div>
+				</div>
+			</div>
+		</main>
+	</body>
 </html>
