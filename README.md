@@ -11,7 +11,6 @@ This is a solution to the [Newsletter sign-up form with success message challeng
 - [My process](#my-process)
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  - [Continued development](#continued-development)
   - [AI Collaboration](#ai-collaboration)
 - [Author](#author)
 
@@ -31,12 +30,12 @@ Users should be able to:
 
 ### Screenshot
 
-<!-- TODO: add a screenshot of YOUR solution (not preview.jpg, that's Frontend Mentor's design mockup). In Firefox: right-click the page → "Take a Screenshot". Then: ![](./screenshot.jpg) -->
+![](./screenshot.jpg)
 
 ### Links
 
-- Solution URL: <!-- TODO: link to your Frontend Mentor submission, if you submit it there -->
-- Live Site URL: <!-- TODO: link to the deployed site (GitHub Pages / Netlify / Vercel) -->
+- Solution URL: [https://github.com/antoru/newsletter-sign-up-with-success-message-main-claude](https://github.com/antoru/newsletter-sign-up-with-success-message-main-claude)
+- Live Site URL: [https://antoru.github.io/newsletter-sign-up-with-success-message-main-claude/](https://antoru.github.io/newsletter-sign-up-with-success-message-main-claude/)
 
 ## My process
 
@@ -50,20 +49,12 @@ Users should be able to:
 
 ### What I learned
 
-<!-- TODO: write in your own words what you learned. A few prompts based on what we covered together, if useful as a reminder (pick what's worth expanding on):
 - Tailwind v4 theme namespaces (`--color-*` vs `--background-image-*` vs `--shadow-*`) and why a gradient inside `--color-*` doesn't work
 - Native `<dialog>`: default centering, `::backdrop`, why Preflight breaks the native `margin: auto`
 - `aria-invalid:` as an alternative to a hand-written `.error` class
 - The relative-path bug between `src/` and the compiled output that Tailwind CLI doesn't rewrite
--->
-
-### Continued development
-
-<!-- TODO: what would you like to focus on in future projects? (optional) -->
 
 ### AI Collaboration
-
-<!-- Factual draft of what we did together with Claude Code — edit freely with your own words and impressions, that's the most important part of this section. -->
 
 I used **Claude Code** as a mentor throughout this project, not to write the code for me. Some concrete examples:
 
@@ -72,9 +63,8 @@ I used **Claude Code** as a mentor throughout this project, not to write the cod
 - Guided debugging (e.g. why a `<dialog>` wasn't centering, why fonts were returning 404s) with the reasoning behind the cause explained, not just the fix
 - Dedicated accessibility, performance, and SEO reviews after the structure was done, with fixes I applied myself once the "why" was explained
 
-<!-- TODO: add your own perspective — what worked well, what didn't, how it felt. -->
-
 ## Author
 
 - GitHub - [antoru](https://github.com/antoru)
-<!-- TODO: add more links if you'd like (Frontend Mentor profile, LinkedIn, personal site...) -->
+- Linkedin - [https://www.linkedin.com/in/antoru/](https://www.linkedin.com/in/antoru/)
+- Frontend Mentor - [https://www.frontendmentor.io/profile/antoru](https://www.frontendmentor.io/profile/antoru)
