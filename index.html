@@ -1,121 +1,217 @@
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+    <meta
+      name="description"
+      content="Newsletter sign-up form with email validation and a success confirmation message, built with HTML, Tailwind CSS and vanilla JavaScript."
+    />
 
-		<link
-			rel="icon"
-			type="image/png"
-			sizes="32x32"
-			href="./assets/images/favicon-32x32.png"
-		/>
-		<link rel="stylesheet" href="./assets/css/style.css" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Newsletter sign-up form with success message"
+    />
+    <meta
+      property="og:description"
+      content="Newsletter sign-up form with email validation and a success confirmation message, built with HTML, Tailwind CSS and vanilla JavaScript."
+    />
+    <meta property="og:image" content="./preview.jpg" />
+    <meta property="og:image:width" content="900" />
+    <meta property="og:image:height" content="660" />
+    <meta name="twitter:card" content="summary_large_image" />
 
-		<title>
-			Frontend Mentor | Newsletter sign-up form with success message
-		</title>
-	</head>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
-	<body>
-		<main
-			class="h-screen w-full grid place-items-center bg-neutral-blue-700 p-6"
-		>
-			<div class="w-full max-w-226 bg-white rounded-[36px] px-8 py-6">
-				<div class="grid gap-16 grid-cols-2">
-					<div class="grid gap-8 text-neutral-blue-800">
-						<h1 class="text-[56px] font-bold leading-[100%]">Stay updated!</h1>
+    <script src="./assets/js/script.js" defer></script>
+  </head>
 
-						<p class="text-[16px] leading-[150%]">
-							Join 60,000+ product managers receiving monthly updates on:
-						</p>
-
-						<ul class="grid gap-2">
-							<li
-								class="grid grid-cols-[auto_auto] justify-start gap-4 leading-[150%]"
-							>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="21"
-									height="21"
-									viewBox="0 0 21 21"
-									fill="none"
-								>
-									<circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
-									<path
-										d="M6 11.3812L8.73464 14L15 8"
-										stroke="white"
-										stroke-width="2"
-									/>
-								</svg>
-								<span> Product discovery and building what matters </span>
-							</li>
-							<li
-								class="grid grid-cols-[auto_auto] justify-start gap-4 leading-[150%]"
-							>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="21"
-									height="21"
-									viewBox="0 0 21 21"
-									fill="none"
-								>
-									<circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
-									<path
-										d="M6 11.3812L8.73464 14L15 8"
-										stroke="white"
-										stroke-width="2"
-									/>
-								</svg>
-								<span> Measuring to ensure updates are a success </span>
-							</li>
-							<li
-								class="grid grid-cols-[auto_auto] justify-start gap-4 leading-[150%]"
-							>
-								<svg
-									xmlns="http://www.w3.org/2000/svg"
-									width="21"
-									height="21"
-									viewBox="0 0 21 21"
-									fill="none"
-								>
-									<circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
-									<path
-										d="M6 11.3812L8.73464 14L15 8"
-										stroke="white"
-										stroke-width="2"
-									/>
-								</svg>
-								<span> And much more! </span>
-							</li>
-						</ul>
-
-						<form id="form">
-							<div>
-								<label for="email" class="text-[12px] font-bold leading-[150%]"
-									>Email address</label
-								>
-								<input
-									id="email"
-									name="email"
-									type="email"
-									placeholder="email@company.com"
-									class="py-4 px-6 rounded-lg border border-neutral-grey block w-full mt-2"
-								/>
-							</div>
-							<button
-								class="bg-neutral-blue-800 w-full text-white rounded-lg py-4 px-6 mt-6 font-bold cursor-pointer"
-							>
-								Subscribe to monthly newsletter
-							</button>
-						</form>
-					</div>
-					<div class="">
-            <img src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+  <body>
+    <main
+      class="grid w-full place-items-center md:h-screen md:bg-neutral-blue-700 md:p-6"
+    >
+      <div
+        class="w-full rounded-[36px] bg-white md:max-w-152 md:p-10 lg:max-w-226 lg:px-8 lg:py-6"
+      >
+        <div class="grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+          <div class="lg:order-last">
+            <picture>
+              <source
+                media="(min-width: 1024px)"
+                srcset="./assets/images/illustration-sign-up-desktop.svg"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="./assets/images/illustration-sign-up-tablet.svg"
+              />
+              <img
+                src="./assets/images/illustration-sign-up-mobile.svg"
+                alt=""
+                class="w-full"
+              />
+            </picture>
           </div>
-				</div>
-			</div>
-		</main>
-	</body>
+
+          <div
+            class="grid gap-6 px-6 pb-11 text-neutral-blue-800 md:p-0 lg:gap-8"
+          >
+            <h1 class="text-[40px] leading-[100%] font-bold md:text-[56px]">
+              Stay updated!
+            </h1>
+
+            <p class="text-[16px] leading-[150%]">
+              Join 60,000+ product managers receiving monthly updates on:
+            </p>
+
+            <ul class="grid gap-2">
+              <li
+                class="grid grid-cols-[auto_auto] justify-start gap-4 leading-[150%]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="21"
+                  viewBox="0 0 21 21"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                  <path
+                    d="M6 11.3812L8.73464 14L15 8"
+                    stroke="white"
+                    stroke-width="2"
+                  />
+                </svg>
+                <span> Product discovery and building what matters </span>
+              </li>
+              <li
+                class="grid grid-cols-[auto_auto] justify-start gap-4 leading-[150%]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="21"
+                  viewBox="0 0 21 21"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                  <path
+                    d="M6 11.3812L8.73464 14L15 8"
+                    stroke="white"
+                    stroke-width="2"
+                  />
+                </svg>
+                <span> Measuring to ensure updates are a success </span>
+              </li>
+              <li
+                class="grid grid-cols-[auto_auto] justify-start gap-4 leading-[150%]"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="21"
+                  height="21"
+                  viewBox="0 0 21 21"
+                  fill="none"
+                  aria-hidden="true"
+                >
+                  <circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155" />
+                  <path
+                    d="M6 11.3812L8.73464 14L15 8"
+                    stroke="white"
+                    stroke-width="2"
+                  />
+                </svg>
+                <span> And much more! </span>
+              </li>
+            </ul>
+
+            <form id="form" novalidate>
+              <div>
+                <div class="flex w-full justify-between">
+                  <label
+                    for="email"
+                    class="text-[12px] leading-[150%] font-bold"
+                  >
+                    Email address
+                  </label>
+                  <span
+                    id="error"
+                    role="alert"
+                    class="hidden text-[12px] leading-[150%] font-bold text-primary-red"
+                  >
+                    I expect an email, darling!
+                  </span>
+                </div>
+                <input
+                  required
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="email@company.com"
+                  class="mt-2 block w-full rounded-lg border border-neutral-grey px-6 py-4 aria-invalid:border-primary-red aria-invalid:bg-red-error-bg aria-invalid:text-primary-red"
+                  aria-invalid="false"
+                  aria-describedby="error"
+                  autocomplete="email"
+                />
+              </div>
+              <button
+                class="mt-6 w-full cursor-pointer rounded-lg bg-neutral-blue-800 px-6 py-4 font-bold text-white hover:bg-hover-gradient hover:shadow-hover-red md:mt-4"
+                id="button-submit"
+              >
+                Subscribe to monthly newsletter
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <dialog
+      id="dialog"
+      class="m-auto h-screen w-full max-w-full p-6 backdrop:bg-neutral-blue-700 md:h-fit md:max-w-126 md:rounded-4xl md:p-16"
+      aria-labelledby="dialog-title"
+    >
+      <div class="grid h-full content-center gap-6">
+        <img src="./assets/images/icon-success.svg" alt="" aria-hidden="true" />
+        <h2
+          class="text-[40px] leading-[100%] font-bold md:text-[56px]"
+          id="dialog-title"
+        >
+          Thanks for subscribing!
+        </h2>
+
+        <p class="text-[16px] leading-[150%]">
+          A confirmation email has been sent to ash@loremcompany.com. Please
+          open it and click the button inside to confirm your subscription.
+        </p>
+        <button
+          class="w-full cursor-pointer rounded-lg bg-neutral-blue-800 px-6 py-4 font-bold text-white"
+          id="close-dialog"
+        >
+          Dismiss message
+        </button>
+      </div>
+    </dialog>
+
+    <footer
+      class="inset-x-0 bottom-0 pt-6 pb-4 text-center text-[11px] md:fixed md:text-white"
+    >
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" class="underline"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://github.com/antoru" class="underline">Antonio Russo</a>.
+    </footer>
+  </body>
 </html>

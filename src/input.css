@@ -2,7 +2,9 @@
 
 @font-face {
   font-family: "Roboto";
-  src: url("../assets/fonts/Roboto-Regular.ttf") format("truetype");
+  src:
+    url("../fonts/Roboto-Regular.woff2") format("woff2"),
+    url("../fonts/Roboto-Regular.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -10,7 +12,9 @@
 
 @font-face {
   font-family: "Roboto";
-  src: url("../assets/fonts/Roboto-Bold.ttf") format("truetype");
+  src:
+    url("../fonts/Roboto-Bold.woff2") format("woff2"),
+    url("../fonts/Roboto-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -18,8 +22,15 @@
 
 @theme {
   --color-primary-red: hsl(4 100% 67%);
+  --color-red-error-bg: hsl(2.4, 100%, 95.1%);
   --color-neutral-blue-800: hsl(234 29% 20%);
   --color-neutral-blue-700: hsl(235 18% 26%);
   --color-neutral-grey: hsl(0 0% 58%);
+  --background-image-hover-gradient: linear-gradient(
+    90deg,
+    #ff6a3a 0%,
+    #ff527b 100%
+  );
+  --shadow-hover-red: 0 16px 32px 0 rgba(255, 97, 85, 0.5);
   --font-sans: "Roboto", sans-serif;
 }
