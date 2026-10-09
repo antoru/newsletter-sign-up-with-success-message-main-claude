@@ -43,6 +43,7 @@ Users should be able to:
 
 - Semantic HTML5 markup (native `<dialog>` for the success message, `<picture>` for responsive illustrations)
 - [Tailwind CSS v4](https://tailwindcss.com/) via `@tailwindcss/cli`, with custom design tokens (`@theme`) based on the challenge's style guide
+  - `src/input.css` is the source file; `assets/css/style.css` is the compiled, minified output linked from `index.html` (built with `npm run build:css`) — only `src/input.css` should be edited by hand
 - Mobile-first workflow, `md`/`lg` breakpoints
 - Vanilla JavaScript (email validation, `aria-invalid` handling, dialog open/close)
 - Prettier + `prettier-plugin-tailwindcss` for formatting
