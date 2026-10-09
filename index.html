@@ -166,7 +166,7 @@
                   name="email"
                   type="email"
                   placeholder="email@company.com"
-                  class="mt-2 block w-full rounded-lg border border-neutral-grey px-6 py-4 aria-invalid:border-primary-red aria-invalid:bg-red-error-bg aria-invalid:text-primary-red"
+                  class="mt-2 block w-full rounded-lg border border-neutral-grey px-6 py-4 data-error:border-primary-red data-error:bg-red-error-bg data-error:text-primary-red"
                   aria-invalid="false"
                   aria-describedby="error"
                   autocomplete="email"
@@ -199,8 +199,9 @@
         </h2>
 
         <p class="text-[16px] leading-[150%]">
-          A confirmation email has been sent to ash@loremcompany.com. Please
-          open it and click the button inside to confirm your subscription.
+          A confirmation email has been sent to
+          <span id="confirmation">ash@loremcompany.com</span>. Please open it
+          and click the button inside to confirm your subscription.
         </p>
         <button
           class="w-full cursor-pointer rounded-lg bg-neutral-blue-800 px-6 py-4 font-bold text-white"

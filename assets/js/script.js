@@ -2,6 +2,8 @@ const form = document.querySelector("form");
 const email = document.getElementById("email");
 const error = document.getElementById("error");
 const dialog = document.getElementById("dialog");
+const confirmation = document.getElementById("confirmation");
+let inputValue = email.value;
 
 // Regular expression for email validation as per HTML specification
 const emailRegExp = /^[\w.!#$%&'*+/=?^`{|}~-]+@[a-z\d-]+(?:\.[a-z\d-]+)*$/i;
@@ -19,6 +21,20 @@ const setEmailAtt = (isValid) => {
 
 const toggleErrorVisibility = (isValid) => {
   error.classList.toggle("hidden", isValid);
+  email.toggleAttribute("data-error", !isValid);
+};
+
+const updateInputValue = () => {
+  inputValue = email.value;
+};
+
+const updateConfirmation = () => {
+  confirmation.textContent = inputValue;
+};
+
+const cleanError = () => {
+  error.classList.add("hidden");
+  email.toggleAttribute("data-error", false);
 };
 
 const handleDialog = (isValid) => {
@@ -35,8 +51,9 @@ const handleDialog = (isValid) => {
 
 // Handle input event to update email validity
 const handleInput = () => {
-  setEmailAtt(true);
-  toggleErrorVisibility(true);
+  cleanError();
+  updateInputValue();
+  updateConfirmation();
 };
 
 // Handle form submission to show error if email is invalid
