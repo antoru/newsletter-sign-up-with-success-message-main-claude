@@ -2,6 +2,7 @@ const form = document.querySelector("form");
 const email = document.getElementById("email");
 const error = document.getElementById("error");
 const dialog = document.getElementById("dialog");
+const closeButton = document.getElementById("close-dialog");
 const confirmation = document.getElementById("confirmation");
 let inputValue = email.value;
 
@@ -40,12 +41,6 @@ const cleanError = () => {
 const handleDialog = (isValid) => {
   if (isValid) {
     dialog.showModal();
-
-    const closeButton = document.getElementById("close-dialog");
-
-    closeButton.addEventListener("click", () => {
-      dialog.close();
-    });
   }
 };
 
@@ -70,3 +65,7 @@ const handleSubmit = (event) => {
 email.addEventListener("input", handleInput);
 // This defines what happens when the user tries to submit the data
 form.addEventListener("submit", handleSubmit);
+
+closeButton.addEventListener("click", () => {
+  dialog.close();
+});
