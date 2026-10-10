@@ -188,6 +188,7 @@
       id="dialog"
       class="m-auto h-screen w-full max-w-full p-6 backdrop:bg-neutral-blue-700 md:h-fit md:max-w-126 md:rounded-4xl md:p-16"
       aria-labelledby="dialog-title"
+      aria-describedby="dialog-description"
     >
       <div class="grid h-full content-center gap-6">
         <img src="./assets/images/icon-success.svg" alt="" aria-hidden="true" />
@@ -198,7 +199,7 @@
           Thanks for subscribing!
         </h2>
 
-        <p class="text-[1rem] leading-[150%]">
+        <p class="text-[1rem] leading-[150%]" id="dialog-description">
           A confirmation email has been sent to
           <span id="confirmation"></span>. Please open it and click the button
           inside to confirm your subscription.
